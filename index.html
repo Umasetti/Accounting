@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .parent1{
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            height: 40px;
+            width: 100%;
+            top: 0;
+            padding: 5px;
+            box-shadow: 0px 0px 20px 3px;
+        }
+        .child1{
+            display: flex;
+            padding-left: 2%;
+            
+        }
+        .child1 svg{
+            height: 25px;
+            width: 20%;
+            border: 0px solid  white;
+            border-radius: 15px;
+            background-color: blue;
+            color: aliceblue;
+
+        }
+        .child2{
+            display: inline;
+            padding: 10px;
+            font-size: medium;
+        }
+        .child2 a{
+            text-decoration: none;
+        }
+        .home{
+            display: flex;
+            justify-content: space-around;
+            background-color: blue;
+            background-repeat: no-repeat;
+            padding: 50px;
+        }
+        .home1{
+            padding: 20px;
+            width: 45%;
+            /* line-gap-override: 20px; */
+            color: white;
+        }
+        .home2{
+            width: 20%;
+            height: fit-content;
+            border: 1px solid;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: aliceblue;
+            box-shadow: 1px 1px 15px 1px;
+        }
+        .home2 button{
+            background-color: blue;
+            border-radius: 10px;
+            width: 100%;
+            height: fit-content;
+            color: white;
+        }
+        input,select,button{
+            width: 95%;
+            font-family: cursive;
+        }
+        .home1 button{
+            width: 90px;
+            height: 30px;
+            border-radius: 10px;
+            font-style: italic;
+            background-color: calc();
+            color: white;
+        }
+        .do{
+            text-align: center;
+        }
+        .do1{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-content: space-around;
+            width: 100%;
+            height: fit-content;
+        }
+        .do12{
+            width:70%;
+            height: fit-content;
+            padding: 10%;
+            text-align: center;
+            border: 1px solid white;
+        }
+        .do12:hover{
+            box-shadow: 1px 1px 15px 1px;
+        }
+        .do12 p,h4{
+            font-size: medium;
+        }
+        .about{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .aboutimg{
+            padding: 40px;
+            padding-left: 60px;
+        }
+        .aboutimg img{
+            width: 90%;
+            height: 300px; 
+        }
+        .aboutus{
+            width: 60%;
+            padding-top: 5%;
+            padding-right: 5%;
+        }
+        .aboutus button{
+            border: opx solid white;
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            box-shadow: 1px 1px 20px 3px;
+            font-weight: bold;  
+        }
+        .why{
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 2%;
+            padding-left: 5%;
+            padding-right: 5%;
+            height: fit-content;
+            width: fit-content;
+
+        }
+        .whyus{
+            padding: 3%;
+            width: 100%;
+            height: fit-content;
+        }
+        .whydiv{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            border: 0px solid white;
+            column-gap: 7%;
+            row-gap: 10%;
+            font-size: small;
+        }
+        .whydiv p{
+            font-size: medium;
+            
+        }
+        .why p{
+            color:rgb(191, 178, 178);
+            font-weight: bolder;
+        }
+        .whydiv h4:hover{
+            color: blue;
+        }
+        .test{
+            height: fit-content;
+        }
+        .client{
+            text-align: center;
+            height: 70px;
+            background-color: blue;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        .clients{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-items: center;
+            height: fit-content;
+            /* height: ; */
+        }
+        .clients p{
+            font-size: smaller;
+        }
+        .client1{
+            height: fit-content;
+            width: 80%;
+            border: 0px solid white;
+            box-shadow: 1px 1px 15px 2px;
+            padding: 10px;
+        }
+        .client1 p{
+            font-size: small;
+        }
+        .clientimg img{
+            padding: 5px;
+            width: 15%;
+            height: fit-content;
+            border-radius: 80px;
+        }
+        .list{
+            text-align: center;
+        }
+        .price{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            /* grid-template-columns: auto auto;  */
+            /* width: 50%;  */
+        }
+        .table{
+            text-align: center;
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 0;
+            /* justify-content: center; */
+            /* padding-left: 68%; */
+            /* width: 60%; */
+            
+        }
+        .table1{
+            /* text-align: center; */
+            border: 1px solid skyblue;
+            /* width: 64%; */
+        }
+        .table2{
+            /* text-align: center; */
+            border: 1px solid skyblue;
+            /* width: 29%; */
+            height:fit-content;
+        }
+        .tablebtn button{
+            background-color: blue;
+            width: 10%;
+            border-radius: 10px;
+            box-shadow: 1px 1px 20px 2px;
+        }
+        .finance{
+            display: flex;
+            justify-content: space-around;
+            height: fit-content;
+            background-image: url(financial.jpg);
+            background-position: center;
+            padding: 40px;
+        }
+        .expert{
+            width: 60%;
+            padding: 30px;
+        }
+        .financebtn{
+            padding: 50px;
+        }
+        .financebtn button{
+            border-radius: 5px;
+            box-shadow: 1px 1px 20px 2px;
+            background-color: green;
+            padding: 5px;
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+        }
+        .Rightfoot{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 100px;
+            justify-content: space-evenly;
+            padding-right: 10%;
+            padding-top: 3%;
+            line-height: 20px;
+        }
+        .Rightfoot p{
+            font-size: small;
+           
+        }
+        .foot{
+            width: 25%;
+            padding-top: 3%;
+            padding-left: 10%;
+        }
+        .foot p{
+            font-size: small;
+        }
+        .logo{
+            display: grid;
+            width: 30%;
+            grid-template-columns: 40px 30px;
+            column-gap: 0px;
+            font-size: smaller;
+        }
+        #face{
+            border: 0px solid white;
+            border-radius: 12px;
+            background-color: aqua;
+            padding: 5px;
+        }
+        #twit{
+            border: 0px solid white;
+            border-radius: 12px;
+            background-color: aqua;
+            padding: 5px;
+        }
+        #face:hover{
+            color: blue;
+        }
+        #twit:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="parent1">
+            <div class="child1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                    <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z"/>
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+                  </svg>
+                <h2>Accounting</h2>
+            </div>
+            <div class="child2">
+                <ul>
+                    <a href="#home"><li class="child2">Home</li></a>
+                    <a href="#services"><li class="child2">Services</li></a>
+                    <a href="#about us"><li class="child2">About Us</li></a>
+                    <a href="#why us"><li class="child2">Why Us</li></a>
+                    <a href="#Testimonials"><li class="child2">Testimonials</li></a>
+                    <a href="#prices"><li class="child2">Prices</li></a>
+                </ul>
+            </div>
+        </nav><br><br><br>
+        <div class="home" id="home">
+            <div class="home1">
+                <h1>Accounting services starting from $50/mon</h1><br>
+                <p>It didn’t members sit well way room editing shorthand means racially service. Damaging shock parties educational</p><br>
+                <button style="background-color: black;">Our Services</button>
+                <button style="color: black;">Hire Us &#xf104;</button>
+            </div>
+            <div class="home2" id="us">
+                <h4>Book a Consultant!</h4><br>
+                <form action="">
+                    <input type="text" placeholder="company name" required><br><br>
+                    <input type="number" placeholder="phone number" required><br><br>
+                    <input type="email" placeholder="email" required pattern="[a-z0-9._]+@[a-z]+\.[a-z]+"><br><br>
+                    <label for="subject"></label>
+                    <select name="" id="subject" width="95%">
+                        <option value="subject for consultation">subject for consultation</option>
+                        <option value="subject for consultation">subject for consultation</option>
+                        <option value="subject for consultation">subject for consultation</option>
+                    </select><br><br>
+                    <center>
+                        <button>Send a Message</button>
+                    </center>
+                </form>
+            </div>
+        </div><br><br>
+        <div class="do" id="services">
+            <p>What we do</p><br>
+            <h2>We offer premium accounting services to our clients</h2>
+        </div><br>
+        <div class="do1" id="hire">
+            <div class="do12">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                    <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                  </svg><br>
+                <h4>Accounting Service</h4><br>
+                <p>Now is the winter of our discontent Made glorious summer by this sun of York</p><br>
+            </div>
+            <div class="do12">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                    <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                  </svg><br>
+                <h4>Document Management</h4><br>
+                <p>Now is the winter of our discontent Made glorious summer by this sun of York</p><br>
+            </div>
+            <div class="do12">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                    <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                  </svg><br>
+                <h4>Client Support</h4><br>
+                <p>Now is the winter of our discontent Made glorious summer by this sun of York</p><br>
+            </div>
+            <div class="do12">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                    <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                  </svg><br>
+                <h4>Finanace Analysis</h4><br>
+                <p>Now is the winter of our discontent Made glorious summer by this sun of York</p><br>
+            </div>
+        </div>
+        <div class="about" id="about us">
+            <div class="aboutimg">
+                <img src="about-us.jpg" alt="">
+            </div>
+            <div class="aboutus">
+                <p style="font-weight: 100;">About us</p><br>
+                <h1>We are innovation & efficiency</h1><br>
+                <p style="font-size: smaller;">Now is the winter of our discontent Made glorious summer by this sun of York; And all the clouds that lour’d upon our house In the deep bosom of the ocean buried. Now are our brows bound with victorious wreaths</p><br><br><br><br>
+                <button><i>Learn More</i></button>
+            </div>
+        </div>
+        <div class="why" id="why us">
+            <div class="whyus">
+                <p>Why us</p><br>
+                <h3>Benefits you get as a client</h3><br>
+                <p>Appearing registration home aren’t policies mean indemnify.</p><br><br>
+                <div class="whydiv">
+                    <div>
+                        <h4>Financial Expert</h4><br>
+                        <p>Now is the winter of our discontent Made glorious summer by this sun of York</p><br>
+                    </div>
+                    <div>
+                        <h4>Weekly statistics</h4><br>
+                        <p>Now is the winter of our discontent Made glorious summer by this sun of York</p><br>
+                    </div>
+                    <div>
+                        <h4>Fast tax reports</h4><br>
+                        <p>Now is the winter of our discontent Made glorious summer by this sun of York</p><br>
+                    </div>
+                    <div>
+                        <h4>24/7 support</h4><br>
+                        <p>Now is the winter of our discontent Made glorious summer by this sun of York</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="whyimg">
+                <img src="why-us.jpg" alt="" height="fit-content" width="100%">
+            </div>
+        </div><br><br>
+        <div class="test" id="Testimonials">
+            <div class="client">
+                <p>testimonials</p><br>
+                <h3>Client testimonials</h3>
+            </div>
+            <div class="clients">
+                <div class="client1">
+                    <div class="clientimg">
+                        <img src="testimonials-client1.jpg" alt="">
+                    </div><br>
+                    <div>
+                        <p>Now is the winter of our discontent. Made glorious summer by this sun of York. And all the clouds that lour’d upon our house. In the deep bosom of the ocean buried.</p>
+                    </div><br>
+                    <div>
+                        <h5>Arnold Oak</h5>
+                        <p>Oak corporation co-founder</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="client1">
+                    <div class="clientimg">
+                        <img src="testimonials-client2.png" alt="">
+                    </div><br>
+                    <div>
+                        <p>Now is the winter of our discontent. Made glorious summer by this sun of York. And all the clouds that lour’d upon our house. In the deep bosom of the ocean buried.</p>
+                    </div><br>
+                    <div>
+                        <h5>Amber Grassling</h5>
+                        <p>Grassling corporation co-founder</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="list" id="prices">
+            <p>Price list</p><br>
+            <h4>We price accordingly</h4>
+        </div><br>
+        <div class="price">
+            <div class="table">
+                <div class="table1">
+                    <table border="1">
+                        <tr>
+                            <th>Document count</th>
+                        </tr>
+                        <tr>
+                            <td>1-30</td>
+                        </tr>
+                        <tr>
+                            <td>31-50</td>
+                        </tr>
+                        <tr>
+                            <td>51-70</td>
+                        </tr>
+                        <tr>
+                            <td>71-100</td>
+                        </tr>
+                        <tr>
+                            <td>101-130</td>
+                        </tr>
+                        <tr>
+                            <td>131-160</td>
+                        </tr>
+                        <tr>
+                            <td>161-180</td>
+                        </tr>
+                        <tr>
+                            <td>181-200</td>
+                        </tr>
+                        <tr>
+                            <td>201-230</td>
+                        </tr>
+                        <tr>
+                            <td>231-...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table2">
+                    <table border="1">
+                        <tr>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>40,00$</td>
+                        </tr>
+                        <tr>
+                            <td>60,00$</td>
+                        </tr>
+                        <tr>
+                            <td>100,00$</td>
+                        </tr>
+                        <tr>
+                            <td>130,00$</td>
+                        </tr>
+                        <tr>
+                            <td>150,00$</td>
+                        </tr>
+                        <tr>
+                            <td>200,00$</td>
+                        </tr>
+                        <tr>
+                            <td>230,00$</td>
+                        </tr>
+                        <tr>
+                            <td>260,00$</td>
+                        </tr>
+                        <tr>
+                            <td>300,00$</td>
+                        </tr>
+                        <tr>
+                            <td>Custom pricing</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div><br>
+        <div class="tablebtn" align="center">
+            <a href="#us"><button>Contact us</button></a>
+        </div><br><br>
+        <div class="finance">
+            <div class="expert">
+                <h3 style="color: white;">Financial experts one click away!</h3><br>
+                <p>It didn’t members sit well way room editing shorthand means racially service. Damaging shock parties educational</p>
+            </div>
+            <div class="financebtn">
+                <a href="#hire"><button>Hire us Today!</button></a>
+            </div>
+        </div>
+        <footer>
+            <div class="foot">
+                <p style="font-size: medium;"><span><strong>Jevelin</strong></span>Accounting</p><br>
+                <p>Now is the winter of our discontent Made glorious summer by this sun of York</p><br>
+                <p>© 2019 Jevelin. All Rights Reserved</p>
+            </div>
+            <div class="Rightfoot">
+                <div>
+                    <strong>Services</strong><br><br>
+                    <p>Accounting</p>
+                    <p>financing</p>
+                    <p>New business</p>
+                </div>
+                <div>
+                    <strong>About us</strong><br><br>
+                    <p>Why us</p>
+                    <p>Testimonials</p>
+                    <p>About</p>
+                </div>
+                <div>
+                    <strong>Contact information</strong><br><br>
+                    <p>470 344 424 4252</p>
+                    <p>brand@company.co</p>
+                    <div class="logo">
+                        <svg id="face" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                          </svg>
+                        <svg id="twit" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                          </svg>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
